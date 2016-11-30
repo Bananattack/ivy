@@ -3,8 +3,7 @@
 
 #include <ivy/reader.h>
 
-namespace ivy
-{
+namespace ivy {
     FileReader::FileReader(const std::string& filename)
     : file(fopen(filename.c_str(), "rb"), std::fclose) {}
 
