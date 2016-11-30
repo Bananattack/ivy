@@ -27,8 +27,7 @@ namespace ivy {
     };
 
     template <typename T>
-    struct OptionData
-    {
+    struct OptionData {
         OptionData(T type, std::string value)
         : type(type), value(value) {}
 
@@ -37,8 +36,7 @@ namespace ivy {
     };
 
     template <typename T>
-    class OptionParser
-    {
+    class OptionParser {
         public:
             OptionParser(std::initializer_list<OptionDefinition<T>> definitions)
             : definitions(definitions) {
